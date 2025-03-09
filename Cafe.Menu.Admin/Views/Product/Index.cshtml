@@ -1,0 +1,31 @@
+﻿@model List<Cafe.Menu.Entity.Product>
+
+<a href="/Product/Add">Ürün Ekle</a>
+<table width="100%">
+    <tr>
+        <td>Id</td>
+        <td>Ürün Adı</td>
+        <td>Fiyat</td>
+        <td>Düzenle</td>
+        <td>Sil</td>
+
+    </tr>
+    @if (Model != null)
+    {
+
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductId</td>
+                <td>@item.ProductName</td>
+                <td>@item.Price</td>
+                <td><a href="/Product/Add/@item.ProductId">Düzenle</a></td>
+                <td><a href="/Product/Delete/@item.ProductId">Sil</a></td>
+            </tr>
+        }
+
+
+
+    }
+</table>

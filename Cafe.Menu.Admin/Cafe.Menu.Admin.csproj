@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cafe.Menu.Business\Cafe.Menu.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Uploads\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Uploads\1.jpeg" />
+    <None Include="wwwroot\Uploads\19d2c274-e34a-4e98-b997-374328264390.jpeg" />
+    <None Include="wwwroot\Uploads\83016ef6-8989-4367-b4d6-c344ed306e52.jpeg" />
+    <None Include="wwwroot\Uploads\8febf60b-830f-4e37-9d40-04a70a950141.jpeg" />
+    <None Include="wwwroot\Uploads\d4a076ca-9b43-4724-8da1-7593b7630eee.jpeg" />
+    <None Include="wwwroot\Uploads\e5d2167f-a3bb-4f3b-ac53-7ec3639224c4.jpeg" />
+  </ItemGroup>
+
+</Project>

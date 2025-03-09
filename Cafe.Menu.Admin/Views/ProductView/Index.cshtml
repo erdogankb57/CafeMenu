@@ -1,0 +1,23 @@
+﻿@using Cafe.Menu.Entity
+@model List<ProductViewModel>
+
+
+
+<div class="container">
+
+    @foreach (var item in Model)
+    {
+        <div class="row" style="margin:10px 0">
+            <div class="col-4">
+                <img src="~/Uploads/@item.ImagePath" width="100px" />
+            </div>
+            <div class="col-8">
+                @item.CategoryName
+                <br />
+               @item.ProductName
+               <br />
+               @item.Price
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,28 @@
+﻿@model List<Cafe.Menu.Entity.Category>
+<a href="/Category/Add">Kategori Ekle</a>
+
+@if (Model != null)
+{
+    <table width="100%">
+        <tr>
+            <td>Id</td>
+            <td>Kategori Adı</td>
+            <td>Tarih</td>
+            <td>Düzenle</td>
+            <td>Sil</td>
+
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.CategoryId</td>
+                <td>@item.CategoryName</td>
+                <td>@item.CreatedDate</td>
+                <td><a href="/Category/Add/@item.CategoryId">Düzenle</a></td>
+                <td><a href="/Category/Delete/@item.CategoryId">Sil</a></td>
+            </tr>
+        }
+
+
+    </table>
+}

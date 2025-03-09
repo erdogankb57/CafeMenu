@@ -1,0 +1,31 @@
+﻿@model List<Cafe.Menu.Entity.Property>
+
+<a href="/Property/Add">Özellik Ekle</a>
+<table width="100%">
+    <tr>
+        <td>Id</td>
+        <td>Özellik Adı</td>
+        <td>Değer</td>
+        <td>Düzenle</td>
+        <td>Sil</td>
+
+    </tr>
+    @if (Model != null)
+    {
+
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.PropertyId</td>
+                <td>@item.Key</td>
+                <td>@item.Value</td>
+                <td><a href="/Property/Add/@item.PropertyId">Düzenle</a></td>
+                <td><a href="/Property/Delete/@item.PropertyId">Sil</a></td>
+            </tr>
+        }
+
+
+
+    }
+</table>
