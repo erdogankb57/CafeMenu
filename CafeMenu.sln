@@ -11,6 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cafe.Menu.Business", "Cafe.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cafe.Menu.Admin", "Cafe.Menu.Admin\Cafe.Menu.Admin.csproj", "{95641FE5-087A-4864-A9C4-DE4538FEBEE8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{53D32129-9335-448F-9B72-0520E5DF985A}"
+	ProjectSection(SolutionItems) = preProject
+		CafeMenu.sql = CafeMenu.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
